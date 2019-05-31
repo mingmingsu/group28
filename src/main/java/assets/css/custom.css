@@ -1,0 +1,93 @@
+/* Add additional stylesheets below
+-------------------------------------------------- */
+html,body{
+    height:100%;
+    width:100%;
+    background-image:url('https://assets.change.org/photos/0/cu/ak/gMCuakRqtfooNPj-1600x900-noPad.jpg?1493864739');
+    /* Picture cited from Change.org (https://www.change.org/p/president-donald-trump-reactivate-and-modernize-the-iowa-class-battleships)*/
+    background-size: 100% 100%;
+}
+.battleGrid {
+    background-color: white;
+    border: 1px solid black;
+    border-spacing: 0px;
+    width:100%;
+    height:70%;
+}
+
+.battleGrid tr {
+    border: 1px solid #72CAF6;
+    height: 10%;
+}
+
+.battleGrid td {
+    border: 1px solid #72CAF6;
+    width: 30px;
+}
+
+td:hover {
+    background-color: #1487F8;
+    cursor: pointer;
+}
+
+.placed {
+    background-color: #1487F8;
+}
+
+.quarter {
+    background-color: #9932CC;
+}
+
+.found {
+    background-color: black;
+}
+
+.occupied {
+    background-color: #2EF800;
+}
+
+.hit {
+    background-color: #FB6101;
+}
+
+.sink {
+    background-color: #980000;
+}
+
+.miss {
+    background-color: #04B1FA;
+}
+
+/*
+.cq_sink{
+    background-color: #2F4F4F;
+}
+
+*/
+
+.radar-square {
+    background-color: gray;
+}
+
+#radar_btn {
+    visibility: hidden;
+}
+#laser_btn {
+    visibility: hidden;
+}
+#up_btn {
+    visibility: hidden;
+}
+#down_btn {
+    visibility: hidden;
+}
+#left_btn {
+    visibility: hidden;
+}
+#right_btn {
+    visibility: hidden;
+}
+
+.btn_toggle {
+    background-color: #333333;
+}

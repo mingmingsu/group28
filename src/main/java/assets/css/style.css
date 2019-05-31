@@ -1,0 +1,143 @@
+html,body{
+    height:100%;
+}
+h1{
+  text-align:center;
+}
+.table{
+    margin-top:20px;
+    position:absolute;
+    width:100%;
+    height:50%;
+    top:20%;
+}
+.table1{
+   position:absolute;
+   left:20%;
+   width:20%;
+   height:100%;
+}
+
+.table2{
+    position:absolute;
+    right:20%;
+    width:20%;
+    height:100%;
+}
+.battleGrid{
+    width: 100%;
+
+}
+.bt{
+   margin-top:50px;
+   position:absolute;
+   font-size:1vw;
+   top:70%;
+   right:20%;
+   width:20%;
+   height:25%;
+   border-style: solid;
+   border-width: 1px;
+   background-color:#72CAF6;
+   overflow:scroll;
+}
+ul{
+  text-align:center;
+  list-style:none;
+}
+#place_minesweeper{
+    height:30px;
+    width:70%;
+}
+#place_destroyer{
+    height:30px;
+    width:70%;
+    margin-top:10px;
+}
+#place_battleship{
+    height:30px;
+    width:70%;
+    margin-top:10px;
+}
+#place_submarine{
+    height:30px;
+    width:70%;
+    margin-top:10px;
+}
+#is_vertical{
+    height:25px;
+    width:25px;
+    cursor: pointer;
+    margin-top:10px;
+    zoom:120%;
+    font-size:200%
+}
+.inst{
+    background-color:#72CAF6;
+    position:absolute;
+    font-size:1vw;
+    top:70%;
+    margin-top:50px;
+    left:15%;
+    width:30%;
+    height:25%;
+    border-style: solid;
+    border-width: 1px;
+    overflow:scroll;
+}
+
+h2{
+    color:#1500EA;
+}
+button:hover{
+    cursor: pointer;
+    background-color:#01B1DE;
+}
+input:hover{
+    background-color:#01B1DE;
+}
+.rsIn{
+    margin-top:60px;
+    position:absolute;
+    top:70%;
+    width:10%;
+    height:25%;
+    left:50%;
+}
+.hitc{
+    border-style: solid;
+    border-width: 1px;
+    background-color:#FB6101;
+    width:10%;
+    height:7%;
+}
+.missc{
+    border-style: solid;
+    border-width: 1px;
+    background-color:#04B1FA;
+    width:10%;
+    height:7%;
+}
+.sinkc{
+    border-style: solid;
+    border-width: 1px;
+    background-color:#980000;
+    width:10%;
+    height:7%;
+}
+.restart{
+    background-color:#72CAF6;
+    position:absolute;
+    top:35%;
+    margin-left:20px;
+    left:85%;
+    width:10%
+    height:25%;
+}
+#restart_game:hover{
+    background-color:#EC0A15;
+}
+#restart_game{
+    height:50px;
+    width:70px;
+}

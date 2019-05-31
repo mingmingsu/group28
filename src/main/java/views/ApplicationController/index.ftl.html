@@ -1,0 +1,62 @@
+<#import "../layout/defaultLayout.ftl.html" as layout>
+<@layout.myLayout "Home page">
+
+<link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
+
+<h1><font color="#FF0000">T</font><font color="#F2000D">h</font><font color="#E5001A">e</font><font color="#D80027"> </font><font color="#CB0034">B</font><font color="#BE0041">a</font><font color="#B1004E">t</font><font color="#A4005B">t</font><font color="#970068">l</font><font color="#8A0075">e</font><font color="#7D0082">s</font><font color="#70008F">h</font><font color="#63009C">i</font><font color="#5600A9">p</font><font color="#4900B6"> </font><font color="#3C00C3">G</font><font color="#2F00D0">a</font><font color="#2200DD">m</font><font color="#1500EA">e</font></h1>
+<div class="table">
+    <div class="table1">
+        <h2>Enemy:</h2>
+        <table id="opponent" class="battleGrid">
+        </table>
+    </div>
+
+    <div class="table2">
+        <h2>You:</h2>
+        <table id="player" class="battleGrid">
+        </table>
+    </div>
+</div>
+<div class="bt">
+    <h3>Place you ships: (scroll to read all)</h3>
+    <ul>
+        <li><button id="place_minesweeper">Place Minesweeper</button></li>
+        <li><button id="place_destroyer">Place Destroyer</button></li>
+        <li><button id="place_battleship">Place Battleship</button></li>
+        <li><button id="place_submarine">Place Submarine</button></li>
+        <li><input type="checkbox" id="is_vertical">Vertical</input></li>
+    </ul>
+</div>
+<div class="inst">
+    <h3>Instruction: (scroll to read all)</h3>
+    <span>Rules: You are able to place 4 ships on your grid,the ships can only be placed vertically or horizontally. The submarine can place under others, but the others cannot. All ships cannot place over the edge. </span></br></br>
+    <span>Introduction:each ship have their captain quarter, the captain quarter have a armor except Minesweeper, it will sunk immediately if the CP is be hit, others will minus 1 armor and Miss.</span></br></br>
+    <span>Radar: You can use radar to detect enemy ships when you sunk one ship successfully. (You can only use it two time in the whole game)</span></br></br>
+    <span>Laser: This is your upgrade weapon for submarine, it can hit under water ships as well. </span></br></br>
+    <span>Move: You can move your fleet one position to N, S, E, W. (Only two time.)</span></br></br>
+    <span>Start game: Player's take turns guessing by calling out the coordinates. The opponent responds with "hit" or "miss" as appropriate. Orange is hit, blue is miss, red is sunk. </span>
+</div>
+
+<div class="rsIn">
+    <div class="hitc"></div><p>Hit</p>
+    <div class="missc"></div><p>Miss</p>
+    <div class="sinkc"></div><p>Sink</p>
+</div>
+<div class="restart">
+    <p>Weapon choice: (Sunk >= 1)</p>
+    <button id="radar_btn">Sonar</button>
+    <button id="laser_btn">Laser</button>
+    <p>Moving choice: (Sunk >= 2)</p>
+    <button id="up_btn">North</button>
+    <button id="down_btn">South</button>
+    <button id="left_btn">East</button>
+    <button id="right_btn">West</button>
+    <p>Restart game here:</p>
+    <button id="restart_game">Restart</button>
+</div>
+<script type="text/javascript" src="/assets/game.js"></script>
+<script>
+    initGame();
+</script>
+
+</@layout.myLayout>
